@@ -1,294 +1,195 @@
-# 🧠 BACKEND ENGINEERING
+# 🚀 6-Month Backend Engineering Roadmap
 
----
+[🧠 MONTH 1 — Protocols + Raw Backend Thinking](./01/README.md)
 
-## PHASE 0 — Mental Shift (Read This Once)
+This month rewires your brain.
 
-> Frameworks change.
-> **Distributed systems principles don’t.**
+🔥 Master deeply
 
-Your real stack:
-
-- **HTTP**
-- **Databases**
-- **Concurrency**
-- **Failure**
-- **Trade-offs**
-
-Languages are just implementations.
-
----
-
-## PHASE 1 — Core Backend Foundations (Month 1–2)
-
-### 🔹 Internet & Protocols (Non-Negotiable)
-
-You must _feel_ these, not memorize them.
-
-**Master:**
-
-- HTTP/1.1 vs HTTP/2 vs HTTP/3
-- REST vs RPC vs GraphQL
-- Status codes (and when they lie)
+- HTTP internals
+- Request lifecycle
 - Idempotency
-- Authentication vs Authorization
-- Cookies vs Tokens vs Sessions
-- CORS (deeply)
+- Status code semantics
+- REST vs RPC vs GraphQL
+- Auth over HTTP
+- Cookies / Sessions / Tokens
+- CORS (browser security model)
 
-**Practice (Node.js):**
+🛠️ Build
 
-- Build raw HTTP server (no Express)
-- Implement:
-  - Auth
-  - Rate limiting
-  - Request validation
-  - Logging middleware
+- Raw HTTP server (Node)
+- Routing system
+- Auth system
+- Logging
+- Rate limiting
+- Validation
 
----
+🎯 End-of-month ability
 
-### 🔹 Data Fundamentals
+You should:
 
-**This is where backend engineers are born.**
+- Debug HTTP without tools
+- Explain CORS confidently
+- Build backend without framework
 
-**Learn:**
+👉 This alone makes you stronger than many devs.
 
-- ACID
+⸻
+
+[🗄️ MONTH 2 — Databases & Performance Thinking](./02/README.md)
+
+This is where backend engineers are born.
+
+🔥 Master
+
+- ACID in practice
 - Isolation levels
-- Indexes (B-Tree, Hash)
-- Query planners
-- N+1 problem
-- Normalization vs denormalization
+- Locks & deadlocks
+- Index internals
+- Query planner reasoning
+- N+1
+- Schema trade-offs
 
-**Databases:**
+🛠️ Projects
 
-- PostgreSQL (primary)
-- MongoDB (secondary)
+Build same API twice
 
-**Project:**
+1️⃣ PostgreSQL version
+2️⃣ MongoDB version
 
-- Same API in:
-  - PostgreSQL
-  - MongoDB
-    Compare:
+Then:
 
-- Performance
-- Complexity
-- Data modeling
+- Benchmark
+- Analyze complexity
+- Explain modeling differences
 
----
+🎯 End-of-month ability
 
-## PHASE 2 — Architecture & Design (Month 3–4)
+- You can explain why a query is slow
+- You choose SQL vs NoSQL rationally
+- You think in data access patterns
 
-### 🔹 Clean Architecture (Language-Agnostic)
+⸻
 
-This matters more than any framework.
+[🧱 MONTH 3 — Architecture + Advanced Node](./03/README.md)
 
-**Learn deeply:**
+Now we introduce structure.
+
+🔥 Learn
 
 - Layered architecture
 - Hexagonal architecture
-- Dependency Inversion
-- Domain-Driven Design (DDD lite)
-
-**Rule:**
-Frameworks must depend on **your code**, not the opposite.
-
----
-
-### 🔹 Node.js (Advanced)
-
-now we go deep.
-
-**Master:**
-
+- Dependency inversion
+- DDD lite
 - Event loop internals
-- Worker threads
-- Clustering
-- Memory leaks
 - Streams
+- Worker threads
+- Memory leaks
 
-**Framework:** NestJS (for structure)
+🛠️ Build
 
-**Project:**
+Production-grade API using NestJS
 
-- Production-grade API with:
-  - Auth
-  - RBAC
-  - Background jobs
-  - Graceful shutdown
-  - Health checks
+Include:
 
----
+- Auth + RBAC
+- Background jobs
+- Graceful shutdown
+- Health checks
 
-## PHASE 3 — Scalability & Distributed Systems (Month 5–7)
+🎯 End-of-month ability
 
-### 🔹 Scalability Concepts
+- You design codebase boundaries
+- You understand Node runtime behavior
+- You can write maintainable backend systems
 
-This is where senior engineers separate.
+⸻
 
-**Learn:**
+[⚡ MONTH 4 — Scalability Foundations](./04/README.md)
+
+Now you start thinking like senior backend.
+
+🔥 Learn
 
 - Vertical vs horizontal scaling
 - Stateless services
-- Load balancers
+- Load balancing
 - CAP theorem
 - Eventual consistency
 - Backpressure
 
----
-
-### 🔹 Caching & Messaging
-
-**Tools:**
+🔥 Tools
 
 - Redis
-- RabbitMQ or Kafka
+- RabbitMQ (or Kafka)
 
-**Implement:**
+🛠️ Build
 
-- Cache-aside
-- Write-through
-- Pub/Sub
-- Retry strategies
-- Dead-letter queues
+- Cache-aside system
+- Message queue workers
+- Retry + DLQ
+- Simple event-driven service
 
----
+🎯 End-of-month ability
 
-### 🔹 Go (Concurrency King)
+- You understand real production constraints
+- You can design scalable APIs
 
-![Image](https://www.twilio.com/content/dam/twilio-com/global/en/blog/legacy/2023/a-practical-guide-to-creating-microservices-with-go-micro/EqA80oR8-Jgs7dcRnUQwZePOPr8Px9Ae0CBbnJeY3bZuy3KWAdnoANS0vTEIMoS_6fcOCeHWcLMHQi.png)
+⸻
 
-![Image](https://miro.medium.com/v2/resize%3Afit%3A1400/1%2AdnvSnnFjELxn6rEioZa-jA.jpeg)
+[🧵 MONTH 5 — Concurrency Mastery (Go)](./05/README.md)
 
-![Image](https://miro.medium.com/1%2APxEdB3KWXXHmh1FlXMk_mg.png)
+Now you become dangerous.
 
-Use Go **only after you understand concurrency concepts**.
-
-**Learn:**
+🔥 Learn
 
 - Goroutines
 - Channels
-- Context
+- Context cancellation
 - Race conditions
+- Throughput vs latency
 
-**Project:**
+🛠️ Build
 
-- High-performance microservice
-- Stress test it
-- Measure latency & throughput
+- High-performance microservice in Go
+- Load test it
+- Measure memory + CPU + latency
 
----
+🎯 End-of-month ability
 
-## PHASE 4 — Enterprise & Robust Systems (Month 8–10)
+- You understand concurrency beyond JS event loop
+- You can write performant backend services
 
-### 🔹 Java (Architecture & Discipline)
+⸻
 
-![Image](https://miro.medium.com/v2/resize%3Afit%3A1400/1%2AzvkLyJov3oZ5nESdb-khlg.png)
+[🏗️ MONTH 6 — Production Engineering + System Design](./06/README.md)
 
-![Image](https://miro.medium.com/0%2AsAm-Vz_k3jZkrtHT)
+Final transformation.
 
-![Image](https://miro.medium.com/1%2As1Cho4SgMxrN7rRaIBCYng.jpeg)
+🔥 Learn
 
-Java is about **structure and correctness**.
-
-**Master:**
-
-- Spring Boot
-- Spring Security
-- Transactions
-- JPA pitfalls
-- Thread pools
-
-**Project:**
-
-- Monolith → Microservices migration
-- Service discovery
-- Centralized config
-
----
-
-### 🔹 Python (APIs & Data-heavy systems)
-
-![Image](https://miro.medium.com/v2/resize%3Afit%3A1400/1%2A_uNvtjnfe4H16WeKtnrHaw.png)
-
-![Image](https://admin.wac.co/uploads/Microservice_Architecture_f548e0b471.png)
-
-![Image](https://miro.medium.com/1%2AF60-kjoaKemo7O11GTdasA.jpeg)
-
-**Focus:**
-
-- FastAPI
-- Async IO
-- Background tasks
-
-**Project:**
-
-- Data-heavy API
-- Async workers
-- Batch processing
-
----
-
-## PHASE 5 — Reliability & Production Engineering (Month 11–13)
-
-### 🔹 Observability
-
-You’re not done until you can debug prod.
-
-**Learn:**
-
-- Logging (structured logs)
-- Metrics (Prometheus)
-- Tracing (OpenTelemetry)
-- SLIs / SLOs / SLAs
-
----
-
-### 🔹 Resilience Patterns
-
-**Critical concepts:**
-
+- Observability (logs / metrics / tracing)
+- Resilience patterns
 - Circuit breakers
-- Bulkheads
 - Timeouts
-- Retries (with jitter)
-- Graceful degradation
-
----
-
-### 🔹 Deployment & Ops
-
-**Tools:**
-
+- Retries with jitter
 - Docker
-- Kubernetes (basics)
-- CI/CD pipelines
+- Basic Kubernetes
+- CI/CD
 
-**Project:**
+🛠️ Final Projects
 
-- Deploy microservices
-- Simulate failures
-- Recover gracefully
-
----
-
-## PHASE 6 — Mastery Level (Month 14–18)
-
-### 🔥 System Design (This is the final boss)
-
-You should be able to design:
+Design & partially implement:
 
 - URL shortener
-- Payment system
-- Chat system
-- Distributed cache
-- Event-driven platform
+- Chat backend
+- Payment flow
+- Event-driven architecture
 
-**Focus on:**
+🎯 End-of-month ability
 
-- Trade-offs
-- Bottlenecks
-- Failure modes
-- Cost
+- You think in systems
+- You can pass senior backend interviews
+- You can design real production platforms
 
----
+⸻
