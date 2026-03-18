@@ -32,8 +32,6 @@ You should:
 - Explain CORS confidently
 - Build backend without framework
 
-👉 This alone makes you stronger than many devs.
-
 ⸻
 
 [🗄️ MONTH 2 — Databases & Performance Thinking](./02/README.md)
@@ -54,8 +52,8 @@ This is where backend engineers are born.
 
 Build same API twice
 
-1️⃣ PostgreSQL version
-2️⃣ MongoDB version
+- 1️⃣ PostgreSQL version
+- 2️⃣ MongoDB version
 
 Then:
 
@@ -88,7 +86,7 @@ Now we introduce structure.
 
 🛠️ Build
 
-Production-grade API using NestJS
+- Production-grade API using NestJS
 
 Include:
 
